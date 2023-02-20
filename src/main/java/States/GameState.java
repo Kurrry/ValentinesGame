@@ -1,8 +1,10 @@
 package States;
 
+import FunctionalMethods.ChoiceResults;
 import FunctionalMethods.TextProcessing;
 import Players.Player;
-import Text.Strings;
+import Services.InputMethods;
+import Text.DialogueStrings;
 
 import java.util.Scanner;
 import org.apache.commons.text.WordUtils;
@@ -10,29 +12,27 @@ import org.apache.commons.text.WordUtils;
 
 
 public class GameState {
-    private Scanner textInput;
-    private Scanner tokenInput;
+    private InputMethods inputMethods;
     private Player player;
     private Player npc;
-    private String[] powersOfLove = new String[5];
-    private String playerName = "";
     public GameState() {
-        textInput = new Scanner(System.in);
-        tokenInput = new Scanner(System.in);
+        inputMethods = new InputMethods();
         startUp();
     }
 
     private void startUp() {
+        String playerName = "";
         while (!TextProcessing.parseName(playerName)) {
-            System.out.print(Strings.playerChoice);
-            playerName = textInput.nextLine();
+            System.out.print(DialogueStrings.playerChoice);
+            playerName = inputMethods.getTextInput().nextLine();
         }
         playerName = WordUtils.capitalize(playerName);
-        System.out.println(Strings.powerChoice);
+        System.out.println(DialogueStrings.powerChoice);
+        String[] powersOfLove = new String[5];
 
         for (int i = 0; i < powersOfLove.length; i++) {
-            System.out.print(Strings.powerEntry);
-            powersOfLove[i] = textInput.nextLine();
+            System.out.print(DialogueStrings.powerEntry);
+            powersOfLove[i] = inputMethods.getTextInput().nextLine();
         }
 
         player = new Player(playerName, powersOfLove);
@@ -43,13 +43,20 @@ public class GameState {
             npc = new Player("Katie");
         }
 
-        System.out.println(Strings.welcomeText);
+        System.out.println(DialogueStrings.welcomeText);
 
         choice1();
     }
 
     private void choice1() {
-        System.out.printf(Strings.youAre, player.getName(), npc.getName());
-        System.out.printf(Strings.choice1, npc.getName());
+        System.out.printf(DialogueStrings.youAre, player.getName(), npc.getName());
+        System.out.printf(DialogueStrings.choice1, npc.getName());
+        ChoiceResults.choice1Result(inputMethods.getTokenInput().nextInt());
+        MiniGames.quizMiniGame(inputMethods);
     }
+
+    public void cleanUp() {
+        System.out.println(DialogueStrings.outroText);
+    }
+
 }

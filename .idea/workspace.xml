@@ -4,22 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e186ed9-11ff-44f6-b92d-d921177a7af4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/App/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FunctionalMethods/TextProcessing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Players/NPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Players/NPCText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Players/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/States/GameState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Text/Strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Text/Words.java" afterDir="false" />
+    <list default="true" id="9e186ed9-11ff-44f6-b92d-d921177a7af4" name="Changes" comment="Refactor structure to help with future scaling. Incomplete refactor.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/FunctionalMethods/ChoiceResults.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/InputMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/States/MiniGames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Text/DialogueStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Text/MiniGameStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FunctionalMethods/TextProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FunctionalMethods/TextProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/States/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/States/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Text/Strings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Text/Words.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Text/WhiteList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,19 +52,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RESOURCE_BUNDLE_EXPRESSION_USED": "resourceBundle",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Projects/ValentinesGame/src/main/java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "Errors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RESOURCE_BUNDLE_EXPRESSION_USED&quot;: &quot;resourceBundle&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/ValentinesGame/src/main/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\ValentinesGame\src\main\java" />
@@ -103,6 +99,18 @@
       <option name="presentableId" value="Default" />
       <updated>1676742027304</updated>
     </task>
+    <task id="LOCAL-00001" summary="Refactor structure to help with future scaling. Incomplete refactor.">
+      <created>1676760063366</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676760063366</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor structure to help with future scaling. Incomplete refactor." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor structure to help with future scaling. Incomplete refactor." />
   </component>
 </project>
