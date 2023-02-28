@@ -3,8 +3,8 @@ package Services;
 import java.util.Scanner;
 
 public class InputMethods {
-    private Scanner textInput;
-    private Scanner tokenInput;
+    private final Scanner textInput;
+    private final Scanner tokenInput;
 
     public InputMethods() {
         textInput = new Scanner(System.in);

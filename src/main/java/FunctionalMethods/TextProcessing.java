@@ -9,7 +9,7 @@ public abstract class TextProcessing {
         return playerNames.contains(name);
     }
 
-    public static boolean quizValidation(String answer, List<String> validAnswers) {
-        return validAnswers.contains(answer);
+    public static int quizValidation(String answer, List<String> validAnswers) {
+        return (validAnswers.contains(answer)) ? 1 : 0;
     }
 }

@@ -12,7 +12,7 @@ import org.apache.commons.text.WordUtils;
 
 
 public class GameState {
-    private InputMethods inputMethods;
+    private final InputMethods inputMethods;
     private Player player;
     private Player npc;
     public GameState() {
@@ -52,7 +52,6 @@ public class GameState {
         System.out.printf(DialogueStrings.youAre, player.getName(), npc.getName());
         System.out.printf(DialogueStrings.choice1, npc.getName());
         ChoiceResults.choice1Result(inputMethods.getTokenInput().nextInt());
-        MiniGames.quizMiniGame(inputMethods);
     }
 
     public void cleanUp() {
