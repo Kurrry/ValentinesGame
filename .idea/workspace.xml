@@ -4,41 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e186ed9-11ff-44f6-b92d-d921177a7af4" name="Changes" comment="File refactor complete. Started quiz minigame and added some dependency injection for scanners.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Factories/HeavyArmorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Factories/IArmorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Factories/LightArmorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Factories/MediumArmorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Slots/ArmSlot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Slots/BodySlot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Slots/BootSlot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Slots/Factory/ISlotFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Slots/Factory/SlotFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Slots/HeadSlot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Slots/IGearSlot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Stats/Modifiers/Defense/HeavyDefenseModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Stats/Modifiers/Defense/IDefenseModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Stats/Modifiers/Defense/LightDefenseModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Stats/Modifiers/Defense/MediumDefenseModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Stats/Modifiers/Upgrade/FirstUpgrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Stats/Modifiers/Upgrade/IUpgradeLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Stats/Modifiers/Upgrade/NoUpgrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Stats/Modifiers/Upgrade/SecondUpgrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Stats/SetBonus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Types/Armor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Types/Heavy/CarapaceArmor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Types/Uniques/HelmOfHorns.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Services/FactoryMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Text/ArmorTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Text/GearSlots.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestClass.java" afterDir="false" />
+    <list default="true" id="9e186ed9-11ff-44f6-b92d-d921177a7af4" name="Changes" comment="Armor system beginning to be implemented. Game functionality remains basic, armor not implemented into functionality yet.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Stats/Modifiers/Defense/NoDefenseModifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Stats/Modifiers/SetBonuses/CarapaceBonus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Armors/Types/Unequipped/Unequipped.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Players/InventoryTypes/Equipment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FunctionalMethods/TextProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FunctionalMethods/TextProcessing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/InputMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/InputMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Armors/Factories/HeavyArmorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Armors/Factories/HeavyArmorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Armors/Factories/IArmorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Armors/Factories/IArmorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Armors/Factories/LightArmorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Armors/Factories/LightArmorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Armors/Factories/MediumArmorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Armors/Factories/MediumArmorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Armors/Stats/SetBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Armors/Stats/Modifiers/SetBonuses/SetBonus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Armors/Types/Armor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Armors/Types/Armor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Armors/Types/Heavy/CarapaceArmor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Armors/Types/Heavy/CarapaceArmor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Hero/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/States/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/States/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/States/MiniGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/States/MiniGames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Text/MiniGameStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Text/MiniGameStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Text/WhiteList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Text/WhiteList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Text/GearSlots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Text/GearSlots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +81,7 @@
       <recent name="C:\Projects\ValentinesGame\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.TestClass">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App.Main" />
       <module name="ValentinesGame" />
@@ -122,8 +104,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestClass" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676916615833</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Armor system beginning to be implemented. Game functionality remains basic, armor not implemented into functionality yet.">
+      <created>1677548279741</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677548279741</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -167,6 +156,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor structure to help with future scaling. Incomplete refactor." />
     <MESSAGE value="File refactor complete. Started quiz minigame and added some dependency injection for scanners." />
-    <option name="LAST_COMMIT_MESSAGE" value="File refactor complete. Started quiz minigame and added some dependency injection for scanners." />
+    <MESSAGE value="Armor system beginning to be implemented. Game functionality remains basic, armor not implemented into functionality yet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Armor system beginning to be implemented. Game functionality remains basic, armor not implemented into functionality yet." />
   </component>
 </project>

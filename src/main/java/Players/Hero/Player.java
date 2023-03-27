@@ -1,7 +1,7 @@
-package Players;
+package Players.Hero;
 
 public class Player {
-    private int lovePoints = 0;
+    private int xpPoints = 0;
     private String name;
     private String[] powersOfLove;
 
@@ -15,16 +15,12 @@ public class Player {
         this.name = name;
     }
 
-    public void incrementLovePoints() {
-        lovePoints++;
+    public void incrementXpPoints() {
+        xpPoints++;
     }
 
-    public int getLovePoints() {
-        return lovePoints;
-    }
-
-    public void setLovePoints(int lovePoints) {
-        this.lovePoints = lovePoints;
+    public int getXpPoints() {
+        return xpPoints;
     }
 
     public String getName() {

@@ -5,4 +5,5 @@ public abstract class GearSlots {
     public final static String arm = "arm";
     public final static String body = "body";
     public final static String boot = "boot";
+    public final static String empty = "empty";
 }

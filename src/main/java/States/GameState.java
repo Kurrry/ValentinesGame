@@ -2,11 +2,10 @@ package States;
 
 import FunctionalMethods.ChoiceResults;
 import FunctionalMethods.TextProcessing;
-import Players.Player;
+import Players.Hero.Player;
 import Services.InputMethods;
 import Text.DialogueStrings;
 
-import java.util.Scanner;
 import org.apache.commons.text.WordUtils;
 
 
